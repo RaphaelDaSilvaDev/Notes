@@ -68,8 +68,8 @@
 
         <Button
             android:id="@+id/buttonAddPost_MainActivity"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
             android:insetTop="0dp"
@@ -78,7 +78,7 @@
             app:icon="@drawable/ic_baseline_add"
             app:iconGravity="textStart"
             app:iconPadding="-1dp"
-            app:iconSize="48dp"
+            app:iconSize="36dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

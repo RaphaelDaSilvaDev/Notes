@@ -1,5 +1,6 @@
 package com.bits.notes.activities
 
+import android.app.Activity
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
@@ -21,13 +22,16 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
     lateinit var noteList: MutableList<Note>
     lateinit var notesAdapter: NotesAdapter
+
+    private val REQUEST_CODE_ADD_NOTE: Int = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         buttonAddPost_MainActivity.setOnClickListener {
             val intent = Intent(this, CreateNoteActivity::class.java)
-            startActivity(intent)
+            startActivityForResult(intent, REQUEST_CODE_ADD_NOTE)
         }
 
         getNotes()
@@ -63,5 +67,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         GetNotesTask().execute()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == REQUEST_CODE_ADD_NOTE && resultCode == Activity.RESULT_OK){
+            getNotes()
+        }
     }
 }

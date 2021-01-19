@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moreSlider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_more_slider"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/openMore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/more"
+            android:textColor="@color/light"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/openMore"
+        app:layout_constraintStart_toEndOf="@+id/openMore"
+        app:layout_constraintTop_toBottomOf="@+id/openMore"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/gray_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_note_color"
+                android:backgroundTint="@color/gray" />
+
+            <ImageView
+                android:id="@+id/image_gray_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_done"
+                app:tint="@color/light" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/red_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_note_color"
+                android:backgroundTint="@color/red" />
+
+            <ImageView
+                android:id="@+id/image_red_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                app:tint="@color/veryDark" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/orange_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_note_color"
+                android:backgroundTint="@color/orange" />
+
+            <ImageView
+                android:id="@+id/image_orange_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                app:tint="@color/veryDark" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/yellow_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_note_color"
+                android:backgroundTint="@color/yellow" />
+
+            <ImageView
+                android:id="@+id/image_yellow_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                app:tint="@color/veryDark" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/green_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_note_color"
+                android:backgroundTint="@color/green" />
+
+            <ImageView
+                android:id="@+id/image_green_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                app:tint="@color/veryDark" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/blue_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_note_color"
+                android:backgroundTint="@color/blue" />
+
+            <ImageView
+                android:id="@+id/image_blue_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                app:tint="@color/veryDark" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/purple_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_note_color"
+                android:backgroundTint="@color/purple" />
+
+            <ImageView
+                android:id="@+id/image_purple_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                app:tint="@color/veryDark" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

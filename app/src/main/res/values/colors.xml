@@ -6,6 +6,7 @@
     <color name="green">#B0FF95</color>
     <color name="blue">#95DFFF</color>
     <color name="purple">#9584FF</color>
+    <color name="gray">#303030</color>
 
     <color name="dark">#252525</color>
     <color name="veryDark">#1F1F1F</color>
