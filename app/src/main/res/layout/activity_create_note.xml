@@ -98,6 +98,17 @@
                 app:layout_constraintStart_toStartOf="@+id/noteTitle_createNote"
                 app:layout_constraintTop_toBottomOf="@+id/noteTitle_createNote" />
 
+            <ImageView
+                android:id="@+id/imageNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeNote_createNote" />
+
             <EditText
                 android:id="@+id/note_createNote"
                 android:layout_width="0dp"
@@ -120,7 +131,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/timeNote_createNote" />
+                app:layout_constraintTop_toBottomOf="@+id/imageNote" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
